@@ -1,0 +1,86 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  background-color: var(--cl-primary);
+  color: var(--cl-inverted);
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 var(--gutter);
+}
+
+.toolbar .spacer {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  margin: var(--header-h) auto 0;
+  padding: var(--gutter);
+  max-width: var(--max-screen-w);
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: var(--gutter);
+  padding: var(--gutter);
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+.github-star-badge {
+  color: #24292e;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(27, 31, 35, .2);
+  border-radius: 3px;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  margin-left: 4px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.github-star-badge:hover {
+  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+  border-color: rgba(27, 31, 35, .35);
+  background-position: -.5em;
+}
+
+.github-star-badge .material-icons {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}
+
+svg#routeImage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+
+  fill: var(--cl-back-image);
+}
+
+@media screen and (max-width: 575px) {
+  svg#routeImage {
+    display: none;
+    visibility: hidden;
+  }
+}
+

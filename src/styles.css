@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  /* variables */
+
+  --font-size: 14px;
+  --font-weight-normal: 400;
+  --font-weight-prominent: 600;
+  --font-weight-fat: 900;
+
+  --spacer: .6rem;
+  --gutter: 1.2rem;
+  --max-screen-w: 960px;
+  --header-h: 4rem;
+
+  --cl-primary: #53449e;
+  --cl-primary-dark: #414181;
+  --cl-back-image: #f8f8f8;
+  --cl-inverted: #efefef;
+
+  /* styles */
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: var(--spacer) 0;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  color: var(--cl-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cl-primary-dark);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--gutter);
+}
