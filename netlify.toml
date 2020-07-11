@@ -1,0 +1,3 @@
+[build]
+  command = "ng build --prod"
+  publish = "dist/declarative-router-demo"
