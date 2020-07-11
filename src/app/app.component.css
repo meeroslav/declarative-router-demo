@@ -15,6 +15,14 @@
   margin: 0 var(--gutter);
 }
 
+.toolbar a {
+  color: var(--cl-inverted);
+  margin: var(--spacer);
+}
+.toolbar a.navActive {
+  border-bottom: 1px solid var(--cl-inverted);
+}
+
 .toolbar .spacer {
   flex: 1;
 }
@@ -29,10 +37,12 @@
 }
 
 footer {
-  margin-top: var(--gutter);
+  border-top: 2px solid var(--cl-primary);
+  margin: var(--gutter) auto;
   padding: var(--gutter);
   display: flex;
   align-items: center;
+  justify-content: center;
   line-height: 1;
 }
 
