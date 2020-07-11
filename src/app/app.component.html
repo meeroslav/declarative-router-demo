@@ -8,6 +8,7 @@
   <span>NG Declarative Routing</span>
   <div class="spacer"></div>
   <a linkTo="/home" linkActive="navActive">Home</a>
+  <a linkTo="/user" linkActive="navActive">User</a>
   <a linkTo="/about" linkActive="navActive">About</a>
 </div>
 
@@ -16,10 +17,16 @@
     <route path="/home">
       <app-home *routeComponent class="content"></app-home>
     </route>
+    <route path="/user">
+      <app-user *routeComponent class="content"></app-user>
+    </route>
     <route path="/about">
       <app-about *routeComponent class="content"></app-about>
     </route>
     <route path="/" redirectTo="/home"></route>
+    <route path="**">
+      <app-not-found *routeComponent class="content"></app-not-found>
+    </route>
   </router>
 </main>
 
