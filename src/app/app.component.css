@@ -20,7 +20,7 @@
   margin: var(--spacer);
 }
 .toolbar a.navActive {
-  border-bottom: 1px solid var(--cl-inverted);
+  border-color: var(--cl-inverted);
 }
 
 .toolbar .spacer {

@@ -50,6 +50,10 @@ a:hover {
   color: var(--cl-primary-dark);
 }
 
+a.navActive {
+  border-bottom: 1px solid var(--cl-primary);
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
