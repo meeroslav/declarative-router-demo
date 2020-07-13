@@ -8,7 +8,7 @@
   <span>NG Declarative Routing</span>
   <div class="spacer"></div>
   <a linkTo="/home" linkActive="navActive">Home</a>
-  <a linkTo="/user" linkActive="navActive">User</a>
+  <a linkTo="/user" [activeOptions]="{ exact: false }" linkActive="navActive">User</a>
   <a linkTo="/about" linkActive="navActive">About</a>
 </div>
 
