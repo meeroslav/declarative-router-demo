@@ -8,6 +8,7 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MediaComponent } from './media/media.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     UserComponent,
     UserListComponent,
     UserProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
