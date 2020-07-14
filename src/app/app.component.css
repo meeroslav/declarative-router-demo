@@ -56,11 +56,21 @@ footer {
   align-items: center;
   justify-content: center;
   line-height: 1;
+  flex-wrap: wrap;
 }
 
-footer a {
-  display: flex;
-  align-items: center;
+footer .signature {
+  flex: 1 0 100%;
+  text-align: center;
+  margin-top: var(--gutter);
+}
+
+@media only screen and (max-width: 767px) {
+  footer span {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: var(--spacer);
+  }
 }
 
 .github-star-badge {
