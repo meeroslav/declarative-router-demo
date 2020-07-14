@@ -13,6 +13,7 @@ html {
 
   --cl-primary: #53449e;
   --cl-primary-dark: #414181;
+  --cl-primary-light: #b99dfa;
   --cl-back-image: #f8f8f8;
   --cl-inverted: #efefef;
 
@@ -24,6 +25,11 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 h1,

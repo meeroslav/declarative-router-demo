@@ -27,9 +27,21 @@
   flex: 1;
 }
 
+.banner {
+  padding: var(--spacer);
+  background: var(--cl-primary-dark);
+  color: var(--cl-inverted);
+  text-align: center;
+  font-weight: var(--font-weight-fat);
+}
+
+main {
+  margin-top: var(--header-h);
+}
+
 .content {
   display: flex;
-  margin: var(--header-h) auto 0;
+  margin: 0 auto;
   padding: var(--gutter);
   max-width: var(--max-screen-w);
   flex-direction: column;

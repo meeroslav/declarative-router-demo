@@ -1,0 +1,13 @@
+.user-list {
+  margin-right: var(--gutter);
+  padding: var(--spacer);
+  background: var(--cl-primary-light);
+}
+
+.user-list, .user-area {
+  flex: 1;
+}
+
+app-media {
+  min-width: 25rem;
+}

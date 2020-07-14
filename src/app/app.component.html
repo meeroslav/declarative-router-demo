@@ -13,6 +13,10 @@
 </div>
 
 <main>
+  <div class="banner">
+    <app-media query="(max-width: 767px)">MOBILE VIEW</app-media>
+    <app-media query="(min-width: 768px)">DESKTOP VIEW</app-media>
+  </div>
   <router>
     <route path="/home">
       <app-home *routeComponent class="content"></app-home>
@@ -29,9 +33,6 @@
     </route>
   </router>
 </main>
-
-<app-media query="(max-width: 767px)">THIS IS MOBILE</app-media>
-<app-media query="(min-width: 768px)">THIS IS DESKTOP</app-media>
 
 <!-- Footer -->
 <footer>

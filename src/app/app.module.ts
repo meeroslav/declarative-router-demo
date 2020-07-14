@@ -9,6 +9,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MediaComponent } from './media/media.component';
+import { SelectUserComponent } from './select-user/select-user.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MediaComponent } from './media/media.component';
     UserListComponent,
     UserProfileComponent,
     NotFoundComponent,
-    MediaComponent
+    MediaComponent,
+    SelectUserComponent
   ],
   imports: [
     BrowserModule,

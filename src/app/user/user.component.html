@@ -1,9 +1,24 @@
 <h1>User</h1>
-<router>
-  <route path="/:id">
-    <app-user-profile *routeComponent></app-user-profile>
-  </route>
-  <route path="/">
-    <app-user-list *routeComponent></app-user-list>
-  </route>
-</router>
+  <app-media query="(min-width: 768px)">
+    <div class="card-container">
+      <app-user-list class="user-list"></app-user-list>
+      <router class="user-area">
+        <route path="/:id">
+          <app-user-profile *routeComponent></app-user-profile>
+        </route>
+        <route path="/">
+          <app-select-user *routeComponent></app-select-user>
+        </route>
+      </router>
+    </div>
+  </app-media>
+  <app-media query="(max-width: 767px)">
+    <router>
+      <route path="/:id">
+        <app-user-profile *routeComponent></app-user-profile>
+      </route>
+      <route path="/">
+        <app-user-list *routeComponent></app-user-list>
+      </route>
+    </router>
+  </app-media>
