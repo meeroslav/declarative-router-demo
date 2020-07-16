@@ -56,19 +56,19 @@
 <input type="hidden" #selection>
 
 <div class="card-container">
-  <div class="card card-small" (click)="selection.value = 'installation'" tabindex="0">
+  <div class="card card-small card-link" (click)="selection.value = 'installation'" tabindex="0">
     <span><b>1</b> Installation</span>
   </div>
 
-  <div class="card card-small" (click)="selection.value = 'register'" tabindex="0">
+  <div class="card card-small card-link" (click)="selection.value = 'register'" tabindex="0">
     <span><b>2</b> Register RoutingModule</span>
   </div>
 
-  <div class="card card-small" (click)="selection.value = 'features'" tabindex="0">
+  <div class="card card-small card-link" (click)="selection.value = 'features'" tabindex="0">
     <span><b>3</b> Add to feature modules</span>
   </div>
 
-  <div class="card card-small" (click)="selection.value = 'routes'" tabindex="0">
+  <div class="card card-small card-link" (click)="selection.value = 'routes'" tabindex="0">
     <span><b>4</b> Add routes</span>
   </div>
 </div>

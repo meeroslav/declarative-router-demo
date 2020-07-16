@@ -13,6 +13,7 @@ html {
   --radius: .3rem;
   --card-w: 15rem;
   --card-w-small: 12rem;
+  --hover-offset: -.2rem;
 
   --cl-primary: #53449e;
   --cl-primary-dark: #414181;
@@ -21,6 +22,7 @@ html {
   --cl-back-image-dark: #e0e0e0;
   --cl-inverted: #efefef;
   --cl-border: #ccc;
+  --cl-shadow: rgba(0, 0, 0, 0.35);
 
   /* styles */
 
@@ -82,7 +84,7 @@ a.navActive {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   padding: calc(2 * var(--spacer));
   margin: 0 var(--spacer) var(--gutter);
   background-color: var(--cl-back-image);
@@ -115,6 +117,11 @@ a.navActive {
 
 a.card {
   margin: 0;
+}
+a.card:hover, .card.card-link:hover {
+  transform: translateY(var(--hover-offset)) scale(1.05);
+  box-shadow: 0 4px 10px var(--cl-shadow);
+  cursor: pointer;
 }
 li + li a.card {
   margin-top: var(--spacer);
