@@ -3,17 +3,19 @@
   <div class="card-container">
     <app-user-list class="user-list"></app-user-list>
     <router class="user-area">
+      <route path="/dashboard">
+        <app-select-user *routeComponent></app-select-user>
+      </route>
       <route path="/:id">
         <app-user-profile *routeComponent></app-user-profile>
       </route>
-      <route path="/">
-        <app-select-user *routeComponent></app-select-user>
-      </route>
+      <route path="/" redirectTo="/user/dashboard"></route>
     </router>
   </div>
 </app-media>
 <app-media query="(max-width: 767px)">
   <router>
+    <route path="/dashboard" redirectTo="/user"></route>
     <route path="/:id">
       <app-user-profile *routeComponent></app-user-profile>
     </route>
