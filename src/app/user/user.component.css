@@ -2,6 +2,7 @@
   margin-right: var(--gutter);
   padding: var(--spacer);
   background: var(--cl-primary-light);
+  border-radius: var(--radius);
 }
 
 .user-list, .user-area {
