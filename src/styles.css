@@ -117,6 +117,7 @@ a.navActive {
 
 a.card {
   margin: 0;
+  width: auto;
 }
 a.card:hover, .card.card-link:hover {
   transform: translateY(var(--hover-offset)) scale(1.05);

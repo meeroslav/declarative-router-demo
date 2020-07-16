@@ -3,6 +3,13 @@
   padding: var(--spacer);
   background: var(--cl-primary-light);
   border-radius: var(--radius);
+  max-width: 20rem;
+}
+
+.user-area {
+  border-radius: var(--radius);
+  border: 1px solid var(--cl-primary-light);
+  padding: var(--spacer);
 }
 
 .user-list, .user-area {
@@ -10,5 +17,5 @@
 }
 
 app-media {
-  min-width: 25rem;
+  width: 100%;
 }
