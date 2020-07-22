@@ -10,6 +10,7 @@
   border-radius: var(--radius);
   border: 1px solid var(--cl-primary-light);
   padding: var(--spacer);
+  min-width: 20rem;
 }
 
 .user-list, .user-area {
