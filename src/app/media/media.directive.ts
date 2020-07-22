@@ -21,6 +21,7 @@ export class MediaDirective {
       }
 
       const mediaQueryList = window.matchMedia(value);
+      console.log(mediaQueryList);
       const listener = event => {
         if (event.matches && !this.hasView) {
           this.renderView();
