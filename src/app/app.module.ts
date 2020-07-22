@@ -10,6 +10,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MediaComponent } from './media/media.component';
 import { SelectUserComponent } from './select-user/select-user.component';
+import { MediaDirective } from './media/media.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SelectUserComponent } from './select-user/select-user.component';
     UserProfileComponent,
     NotFoundComponent,
     MediaComponent,
+    MediaDirective,
     SelectUserComponent
   ],
   imports: [
