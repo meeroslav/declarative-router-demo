@@ -29,14 +29,26 @@ export class MediaDirective {
           this.clearView();
         }
       };
-      this.listenerCleanup = () => mediaQueryList.removeEventListener('change', listener);
+      this.listenerCleanup = () => this.removeListener(mediaQueryList, listener);
       // trigger initial
       listener({
         media: mediaQueryList.media,
         matches: mediaQueryList.matches
       });
-      mediaQueryList.addEventListener('change', listener);
+      this.addListener(mediaQueryList, listener);
     }
+  }
+
+  private addListener(mql: MediaQueryList, listener: (event: MediaQueryListEvent) => void): void {
+    mql.addEventListener
+      ? mql.addEventListener( 'change', listener)
+      : mql.addListener(listener);
+  }
+
+  private removeListener(mql: MediaQueryList, listener: (event: MediaQueryListEvent) => void): void {
+    mql.removeEventListener
+      ? mql.removeEventListener( 'change', listener)
+      : mql.removeListener(listener);
   }
 
   private renderView(): void {
