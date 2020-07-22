@@ -21,14 +21,14 @@
     <route path="/home">
       <app-home *routeComponent class="content"></app-home>
     </route>
-    <route path="/user/**">
+    <route path="/user" [exact]="false">
       <app-user *routeComponent class="content"></app-user>
     </route>
     <route path="/about">
       <app-about *routeComponent class="content"></app-about>
     </route>
     <route path="/" redirectTo="/home"></route>
-    <route path="**">
+    <route path="/" [exact]="false">
       <app-not-found *routeComponent class="content"></app-not-found>
     </route>
   </router>
