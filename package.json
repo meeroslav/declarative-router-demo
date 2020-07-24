@@ -1,6 +1,6 @@
 {
   "name": "declarative-router-demo",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4400",
@@ -16,7 +16,7 @@
     "@angular/core": "~10.0.5",
     "@angular/platform-browser": "~10.0.5",
     "@angular/platform-browser-dynamic": "~10.0.5",
-    "angular-routing": "0.2.0",
+    "angular-routing": "0.2.1",
     "rxjs": "~6.6.0",
     "zone.js": "~0.10.3"
   },
