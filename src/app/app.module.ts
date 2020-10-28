@@ -8,9 +8,8 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { MediaComponent } from './media/media.component';
 import { SelectUserComponent } from './select-user/select-user.component';
-import { MediaDirective } from './media/media.directive';
+import { MediaModule } from 'ng-helpers';
 
 @NgModule({
   declarations: [
@@ -21,15 +20,13 @@ import { MediaDirective } from './media/media.directive';
     UserListComponent,
     UserProfileComponent,
     NotFoundComponent,
-    MediaComponent,
-    MediaDirective,
     SelectUserComponent
   ],
   imports: [
     BrowserModule,
-    RoutingModule.forRoot()
+    RoutingModule.forRoot(),
+    MediaModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
