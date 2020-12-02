@@ -6,14 +6,14 @@ html {
   --font-weight-prominent: 600;
   --font-weight-fat: 900;
 
-  --spacer: .6rem;
+  --spacer: 0.6rem;
   --gutter: 1.2rem;
   --max-screen-w: 960px;
   --header-h: 4rem;
-  --radius: .3rem;
+  --radius: 0.3rem;
   --card-w: 15rem;
   --card-w-small: 12rem;
-  --hover-offset: -.2rem;
+  --hover-offset: -0.2rem;
 
   --cl-primary: #53449e;
   --cl-primary-dark: #414181;
@@ -27,7 +27,8 @@ html {
 
   /* styles */
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: var(--font-size);
   font-weight: var(--font-weight-normal);
   box-sizing: border-box;
@@ -120,7 +121,7 @@ a.card {
   margin: 0;
   width: auto;
 }
-a.card:hover, .card.card-link:hover {
+a.card:hover {
   transform: translateY(var(--hover-offset)) scale(1.05);
   box-shadow: 0 4px 10px var(--cl-shadow);
   cursor: pointer;
