@@ -5,9 +5,8 @@
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
-  <span>NG Declarative Routing</span>
+  <span>Angular routing responsive demo</span>
   <div class="spacer"></div>
-  <a linkTo="/home" linkActive="navActive">Home</a>
   <a linkTo="/user" [activeOptions]="{ exact: false }" linkActive="navActive">User</a>
   <a linkTo="/about" linkActive="navActive">About</a>
 </div>
@@ -18,16 +17,13 @@
     <use-media query="(min-width: 768px)">DESKTOP VIEW</use-media>
   </div>
   <router>
-    <route path="/home">
-      <app-home *routeComponent class="content"></app-home>
-    </route>
     <route path="/user" [exact]="false">
       <app-user *routeComponent class="content"></app-user>
     </route>
     <route path="/about">
       <app-about *routeComponent class="content"></app-about>
     </route>
-    <route path="/" redirectTo="/home"></route>
+    <route path="/" redirectTo="/user"></route>
     <route path="/" [exact]="false">
       <app-not-found *routeComponent class="content"></app-not-found>
     </route>
