@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { RoutingModule } from 'angular-routing';
+import { ComponentRouterModule } from '@angular-component/router';
 import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
@@ -22,7 +22,7 @@ import { MediaModule } from 'ng-helpers';
   ],
   imports: [
     BrowserModule,
-    RoutingModule.forRoot(),
+    ComponentRouterModule.forRoot(),
     MediaModule
   ],
   bootstrap: [AppComponent]
